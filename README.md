@@ -1,2 +1,0 @@
-# obrazec
-obrazec
