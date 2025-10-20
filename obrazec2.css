@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image:url("back.jpg");
+	font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+}
+#n1 {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom:20px;
+	font-weight: bold;
+	color:white;
+}
+#n {
+	text-align: center;
+	font-size: 10px;
+	margin-top:40px;
+	margin-bottom:20px;
+	color:white;
+}
+#opis {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 60px;
+	color:white;
+}
+.regbox{
+	width: 700px;
+	height:100vh;
+	background-color:white;
+	margin: 0 auto 60px auto;
+	padding: 30px;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.input {
+	width: 90%;
+	height: 20px;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+}
+
+.box{
+	width:300px;
+	height:70px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.lab{
+	margin-bottom:5px;
+}
