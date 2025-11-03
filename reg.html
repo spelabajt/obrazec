@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sl-SL">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Emirates</title>
@@ -19,7 +19,7 @@
 		<form id="regForm" action="login.html" method="get">
 			<div class="box1 field-group" id="emailBox">
 				<p class="lab">Email</p>
-				<input type="email" class="input1" id="email" required>
+				<input type="text" class="input1" id="email" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 				<div class="error">Required field</div>
 			</div>
 			
@@ -29,7 +29,7 @@
 					<td>
 						<div class="box2 field-group">
 							<p class="lab1">Title</p>
-							<select required>
+							<select required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 								<option></option>
 								<option>Miss</option>
 								<option>Mr</option>
@@ -44,7 +44,7 @@
 					<td>
 						<div class="box3" id="firstBox">
 							<p class="lab1">First name</p>
-							<input type="text" class="input2" required>
+							<input type="text" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 							<div class="error">Required field</div>
 						</div>
 					</td>
@@ -52,7 +52,7 @@
 					<td>
 						<div class="box3">
 							<p class="lab1">Last name</p>
-							<input type="text" class="input2" required>
+							<input type="text" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 							<div class="error">Required field</div>
 						</div>
 					</td>
@@ -61,7 +61,7 @@
 			<p class="p1">Your name must be entered in English characters as it appears on your passport.</p>
 			<div class="box4">
 				<p class="lab1">Password</p>
-				<input type="password" class="input2" required>
+				<input type="password" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 				<div class="error">Required field</div>
 			</div>
 			<table class="tablem">
@@ -69,14 +69,14 @@
 					<td>
 						<div class="box4">
 							<p class="lab1">Date of birth</p>
-							<input type="date" class="input3" required>
+							<input type="date" class="input3" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 							<div class="error">Required field</div>
 						</div>
 					</td>
 					<td>
 						<div class="box4">
 							<p class="lab1">Country/territory of residence</p>
-							<select required>
+							<select required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 								<option></option>
 								<option>Afghanistan</option>
 								<option>Albania</option>
@@ -285,7 +285,7 @@
 					<td>
 						<div class="box3">
 							<p class="lab1">Preferred Language</p>
-							<select required>
+							<select required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 								<option></option>
 								<option>English</option>
 							</select>
@@ -296,7 +296,7 @@
 					<td>
 						<div class="box2">
 							<p class="lab1">Country code</p>
-							<select required>
+							<select required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 							  <option></option>
 							  <option value="+93">Afghanistan (+93)</option>
 							  <option value="+355">Albania (+355)</option>
@@ -408,7 +408,7 @@
 					<td>
 						<div class="box3">
 							<p class="lab1">Cell number</p>
-							<input type="text" class="input2" required>
+							<input type="text" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 							<div class="error">Required field</div>
 						</div>
 					</td>
@@ -430,11 +430,14 @@
 				Sign up to receive flydubai   newsletters and special-offer emails. Your name and email address will be shared with flydubai for this purpose. Unsubscribe at any time via relevant link in flydubai emails, by updating your Emirates Skywards account preferences or by contacting Emirates or flydubai. For more details, please see flydubai’s privacy policy.
 			</p>
 			<p  class="lab3">By creating an account you are agreeing to the Emirates Skywards program rules(Opens in a new tab)﻿ and our privacy policy(Opens in a new tab)﻿.</p>
-			<button class="btn">Create an account</button> 
+			<button class="btn" id="create-account">Create an account</button> 
 		</form>
 		</div>
 		
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>	
 	<script src="required_field.js"></script>
+	
+
 	
 	</body>
 </html>
