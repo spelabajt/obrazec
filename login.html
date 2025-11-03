@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sl-SL">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Emirates</title>
@@ -22,13 +22,13 @@
 			<p class="naslov2">Login</p>
 			<div class="box3">
 				<p class="lab1">Email or Skywards number</p>
-				<input type="text" class="input2">
+				<input type="text" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 			</div>
 			<a href="#" class="link">Forgot your email or account number?</a>
 			
 			<div class="box3">
 				<p class="lab1">Password</p>
-				<input type="password" class="input2">
+				<input type="password" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 			</div>
 			<a href="#" class="link">Forgot/Create password</a>
 			
