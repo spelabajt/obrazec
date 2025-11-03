@@ -46,3 +46,36 @@
 				if (!allValid) e.preventDefault();
 			});
 		});
+		
+		
+		document.getElementById('create-account').addEventListener('click', function(e) {
+			e.preventDefault(); // prepreči privzeto oddajo obrazca
+
+			  const form = document.getElementById('regForm');
+			  const requiredFields = form.querySelectorAll('input[required], select[required]');
+			  let allFilled = true;
+
+			  requiredFields.forEach(field => {
+				if (!field.value.trim()) {
+				  allFilled = false;
+				}
+			  });
+
+			  if (!allFilled) {
+				Swal.fire({
+				  icon: "error",
+				  title: "Nisi izpolnil vseh polj",
+				  text: "Preveri in poskusi še enkrat."
+				});
+			  } else {
+				Swal.fire({
+				  title: "Uspešno si se registriral!",
+				  icon: "success",
+				  draggable: true
+				}).then((result) => {
+				  if (result.isConfirmed) {
+					window.location.href = 'login.html';
+				  }
+				});
+			}
+		});
