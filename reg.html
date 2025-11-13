@@ -69,7 +69,7 @@
 					<td>
 						<div class="box4">
 							<p class="lab1">Date of birth</p>
-							<input type="date" class="input3" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
+							<input type="date" class="input3" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')" id="birthDate">
 							<div class="error">Required field</div>
 						</div>
 					</td>
@@ -408,7 +408,7 @@
 					<td>
 						<div class="box3">
 							<p class="lab1">Cell number</p>
-							<input type="text" class="input2" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
+							<input type="text" class="input2" required pattern="\d+" oninvalid="this.setCustomValidity('Please enter only numbers')" oninput="this.setCustomValidity('')" onkeypress="return event.charCode >= 48 && event.charCode <= 57" inputmode="numeric">
 							<div class="error">Required field</div>
 						</div>
 					</td>
