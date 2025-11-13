@@ -233,3 +233,18 @@ select{
   background-color: #a10f14;
   transform: scale(0.98);
 }
+
+.disabled-field {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.below-email.blurred {
+    filter: blur(2px);
+    pointer-events: none;
+    user-select: none;
+    transition: filter 0.3s ease;
+}
+
+
+
