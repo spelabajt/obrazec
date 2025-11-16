@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+    // FUNKCIJA ZA VSE LINK ELEMENTE S CLASS="link"
+    document.querySelectorAll('.link').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            Swal.fire({
+                title: "Oops!",
+                text: "Please try to recall what you entered earlier.",
+                icon: "question",
+                confirmButtonText: "OK"
+            });
+        });
+    });
+
+});
+
 document.addEventListener('DOMContentLoaded', function () {
 	// ===== VALIDACIJA OBRAZCA =====
 	const form = document.getElementById('regForm');
@@ -132,3 +150,5 @@ document.getElementById('create-account').addEventListener('click', function(e) 
 		});
 	}
 });
+
+
