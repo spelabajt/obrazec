@@ -5,8 +5,12 @@
 
 body {
 	background:#2b2b2b;
-	font-family: 'Merriweather';
 }
+
+body, input, select, textarea, button {
+    font-family: 'Merriweather', serif;
+}
+
 .logo {
 	background-color: #333;
 	height: 60px;
@@ -46,46 +50,51 @@ body {
 	justify-content: center;
 	align-items: flex-start;
 }
-/* Okvir ob napaki */
 .error-box {
-  border: 2px solid #e74c3c;
+  border: 2px solid #d71920;
   border-radius: 3px;
   padding: 5px;
-  margin-bottom: 15px; /* manjši spodnji odmik kot prej */
+  margin-bottom: 15px;
   transition: margin-bottom 0.3s, border 0.3s, box-shadow 0.3s;
-  box-shadow: 0 2px 5px rgba(231, 76, 60, 0.3);
+  box-shadow: 0 2px 5px rgba(215, 25, 32, 0.4);
 }
+
 .box1.error-box{
 	min-height: 90px;
 	margin-bottom: 10px;
 }
+
 .box3.error-box,
 .box2.error-box,
 .box4.error-box{
 	min-height: 80px;
 	margin-bottom: 15px;	
 }
-/* Ob višini boxa z napako zmanjšaj višino, da je bližje originalu */
+
 .box11.error-box {
-  min-height: 70px; /* manjša višina kot prej, a dovolj za napako */
+  min-height: 70px;
   margin-bottom: 15px;
 }
 
 /* Napaka spodaj */
 .error {
   display: none;
-  color: #c0392b;
+  color: #d71920;
   font-size: 13px;
   font-weight: bold;
-  background-color: #fcebea;
+  background-color: rgba(215, 25, 32, 0.15);
   padding: 4px 10px;
   border-radius: 5px;
   margin-top: 5px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   width: 100%;
   box-sizing: border-box;
-  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
+
+.error-box .error {
+  display: block;
+}
+
 .box1, .box2, .box3, .box4 {
   min-height: 55px; /* ali tvoja željena */
   transition: min-height 0.3s, margin-bottom 0.3s;
