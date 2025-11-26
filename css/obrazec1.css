@@ -5,8 +5,12 @@
 
 body {
 	background-color: #f5f5f5;
-	font-family: 'Merriweather';
 }
+
+body, input, select, textarea, button {
+    font-family: 'Merriweather', serif;
+}
+
 
 .logo {
 	background-color: #333;
