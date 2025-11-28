@@ -35,5 +35,4 @@ The project involves creating web-based login and registration forms inspired by
 
 ---
 
-## Preview Image
-![Emirates-style login form](attachment://879d06f9-b101-4d5a-88a5-2d20b2ef05fa.png)
+![Emirates-style login form](a.png)
