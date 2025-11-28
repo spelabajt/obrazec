@@ -3,7 +3,8 @@
 The project involves creating web-based login and registration forms inspired by the design used by Emirates airline. The purpose of the assignment is to practice HTML, CSS, and basic JavaScript validation. The login form allows users to sign in with their email or Skywards number, while the registration form collects personal information from new users. Both forms use required fields and custom error messages to ensure correct input. The design focuses on a clean, professional layout that resembles real airline web interfaces.
 Purpose of the project: practice HTML, CSS, and basic JavaScript validation
 
-Inspiration: Emirates login and registration forms
+### Inspiration:
+- Emirates login and registration forms
 
 ### Login form features:
 - sign in with email or Skywards number
