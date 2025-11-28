@@ -1,4 +1,4 @@
-#Naslov
+# Naslov
 This is a school assignment for creating a web form that is similar to the login and registration forms used by the airline company Emirates. The purpose of this task is to practice HTML, CSS, and basic JavaScript form validation while designing forms that resemble real-world airline web interfaces.
 
 The assignment includes a login form for existing users, which allows them to log in using their email or Skywards number and password. The form contains checkboxes for remembering login information on the device and provides links for password recovery and account assistance. Basic form validation is implemented to ensure that all required fields are filled correctly, providing a user-friendly experience.
