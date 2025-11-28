@@ -35,7 +35,9 @@ The project involves creating web-based login and registration forms inspired by
 - Create realistic, functional forms similar to real airline websites  
 - Demonstrate skills in structure, design, and validation of web forms  
 
-### Successful login.
+---
+
+### Successful login
 **Email or Skywards number**: neki@g.c
 
 **Password**: aaaa
