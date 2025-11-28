@@ -1,8 +1,28 @@
-# Naslov
-This is a school assignment for creating a web form that is similar to the login and registration forms used by the airline company Emirates. The purpose of this task is to practice HTML, CSS, and basic JavaScript form validation while designing forms that resemble real-world airline web interfaces.
+# Web form
+## Short Description
+The project involves creating web-based login and registration forms inspired by the design used by Emirates airline. The purpose of the assignment is to practice HTML, CSS, and basic JavaScript validation. The login form allows users to sign in with their email or Skywards number, while the registration form collects personal information from new users. Both forms use required fields and custom error messages to ensure correct input. The design focuses on a clean, professional layout that resembles real airline web interfaces.
+Purpose of the project: practice HTML, CSS, and basic JavaScript validation
 
-The assignment includes a login form for existing users, which allows them to log in using their email or Skywards number and password. The form contains checkboxes for remembering login information on the device and provides links for password recovery and account assistance. Basic form validation is implemented to ensure that all required fields are filled correctly, providing a user-friendly experience.
+Inspiration: Emirates login and registration forms
 
-Additionally, the assignment includes a registration form for new users to create an Emirates Skywards account. This form collects important user information, including email, title, first and last name, password, date of birth, country of residence, preferred language, phone number, and an optional invite code. Users can also choose to subscribe to Emirates and flydubai newsletters via checkboxes. The registration form uses HTML required attributes and JavaScript for custom error messages to guide the user through the correct completion of the form.
+### Login form features:
+- sign in with email or Skywards number
+- password field + “remember me” checkbox
+- links for password recovery and account help
+  
+### Registration form features:
+- collection of essential user information
+- optional newsletter subscriptions
+- required fields + JavaScript error messages
 
-The design of both forms focuses on a structured and clean layout using divs, tables, and CSS styling. This ensures a professional and visually appealing interface that mirrors real-world airline web forms. The project demonstrates the ability to create responsive, functional, and user-friendly forms with proper input validation and guidance, providing a practical example of web development skills in a real-life context.
+### Design elements:
+- clean, structured layout using divs and tables
+- CSS styling for a professional, airline-style appearance
+
+### Functionality:
+- input validation for correct completion
+- user-friendly guidance and feedback
+
+### Goal:
+- create realistic, functional forms similar to real airline websites
+- demonstrate skills in structure, design, and validation of web forms
