@@ -56,6 +56,9 @@ if (loginBtn) {
                 passwordInput.value = "";
             });
         }
+        if (result.isConfirmed) {
+            window.location.href = 'https://www.emirates.com/english/';
+        }
     });
 }
 
@@ -199,3 +202,4 @@ if (loginBtn) {
     }
 
 });
+
