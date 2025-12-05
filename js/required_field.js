@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
     /* =========================
        2) LOGIN GUMB
     ========================== */
     const loginBtn = document.querySelector(".loginG");
+
 if (loginBtn) {
     loginBtn.addEventListener("click", function (e) {
         e.preventDefault();
@@ -33,7 +33,8 @@ if (loginBtn) {
         const email = emailInput?.value.trim();
         const password = passwordInput?.value.trim();
 
-        if (email === "neki@g.c" && password === "aaaa") {
+        // Check email and password
+        if (email === "neki@gmail.com" && password === "aaaa") {
             Swal.fire({
                 title: "You have successfully logged in!",
                 icon: "success",
@@ -43,6 +44,8 @@ if (loginBtn) {
             }).then(() => {
                 emailInput.value = "";
                 passwordInput.value = "";
+                // Redirect after clicking confirm
+                window.location.href = 'https://www.emirates.com/english/';
             });
         } else {
             Swal.fire({
@@ -52,12 +55,8 @@ if (loginBtn) {
                 confirmButtonColor: "#d71920",
                 draggable: true
             }).then(() => {
-                emailInput.value = "";
                 passwordInput.value = "";
             });
-        }
-        if (result.isConfirmed) {
-            window.location.href = 'https://www.emirates.com/english/';
         }
     });
 }
