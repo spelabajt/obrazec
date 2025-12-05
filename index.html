@@ -10,9 +10,10 @@
 <body>
 	<div class="logo">
 		<a href="index.html">
-			<img src="img/logo.png" alt="emirates-logo" id="sl" title="Špela Bajt&#10;4. Rb">
+			<img src="img/logo.png" alt="emirates-logo" id="sl" >
 		</a>
 	</div>
+	<div class="click-point" style="top: 17px; left: 387px;"></div>
 
 	<p id="naslov1">Log in to Emirates</p>
 	<p id="opis">
@@ -55,6 +56,41 @@
 	
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>	
 	<script src="js/required_field.js"></script>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", () => {
+    const clickPoint = document.querySelector(".click-point");
+
+    clickPoint.addEventListener("click", () => {
+        // Preverimo, če kvadratek že obstaja, da ne ustvarimo več kopij
+        if (!document.querySelector(".popup-box")) {
+            const box = document.createElement("div");
+            box.classList.add("popup-box");
+            box.textContent = "Špela Bajt";
+
+            // Nastavimo osnovni stil
+            box.style.position = "absolute";
+            box.style.top = (clickPoint.offsetTop + clickPoint.offsetHeight + 5) + "px";
+            box.style.left = clickPoint.offsetLeft + "px";
+            box.style.padding = "5px 10px";
+            box.style.backgroundColor = "#f0f0f0";
+            box.style.border = "1px solid #333";
+            box.style.borderRadius = "4px";
+            box.style.fontSize = "14px";
+            box.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+            box.style.zIndex = "1000";
+
+            document.body.appendChild(box);
+
+            // Po 2 sekundah kvadratek izbrišemo
+            setTimeout(() => {
+                box.remove();
+            }, 2000);
+        }
+    });
+});
+</script>
+
 
 </body>
 </html>
